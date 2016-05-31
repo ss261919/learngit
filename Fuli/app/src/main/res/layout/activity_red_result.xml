@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popWindowRedSRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="vaporsome.com.vaporsome.vaporsome.main.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.15"
+                        android:background="@color/colorTopGuide"></RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/redResultMoveLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.85"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:id="@+id/redResultMoveLL2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.446"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.375">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="33dp"
+                                        android:background="@color/colorTopGuide" />
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@color/colorTopGuide" />
+
+                                    <ImageView
+                                        android:id="@+id/popWindowCompanyIcon"
+                                        android:layout_width="66dp"
+                                        android:layout_height="66dp"
+                                        android:layout_centerInParent="true"
+                                        android:scaleType="centerCrop"
+                                        android:src="@mipmap/red_head_icon" />
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.625">
+
+                                    <TextView
+                                        android:id="@+id/popWindowCompanyWishText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:textColor="@color/colorRedResultCompanyComment"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/popWindowCompanyRedMoneyNumber"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/popWindowCompanyWishText"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="20dp"
+                                        android:textColor="@color/colorRedResultMoney"
+                                        android:textSize="36sp" />
+
+                                    <TextView
+                                        android:id="@+id/popWindowMoneyTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBaseline="@+id/popWindowCompanyRedMoneyNumber"
+                                        android:layout_toRightOf="@+id/popWindowCompanyRedMoneyNumber"
+                                        android:text="元"
+                                        android:textColor="@color/colorRedResultMoney"
+                                        android:textSize="18sp"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/popWindowHaveSaved"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="已存入余额，可用于提现"
+                                        android:textColor="@color/colorRedResultOutOfMoney"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/colorGrayLight" />
+                            </LinearLayout>
+
+                            <android.support.v4.widget.SwipeRefreshLayout
+                                android:id="@+id/popWindowRecycleViewSRL"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.564">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/popWindowRecycleView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="visible"></android.support.v7.widget.RecyclerView>
+
+                            </android.support.v4.widget.SwipeRefreshLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.15"
+                        android:background="@color/colorTopGuide">
+
+                        <LinearLayout
+                            android:id="@+id/popWindowCancleLL"
+                            android:layout_width="64dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="13dp"
+                            android:gravity="center_vertical|left">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:src="@mipmap/change_user_img_back" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/popWindowShareLL"
+                            android:layout_width="64dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="13dp"
+                            android:layout_marginTop="13dp"
+                            android:gravity="center_vertical|right">
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:src="@mipmap/share" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/popWindowCompanyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="22sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/redRecorderBGLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"
+                android:orientation="vertical"
+                android:visibility="gone"></LinearLayout>
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/redResultBottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/redResultBottomLayoutShare"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/share_img" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/redResultBottomLayoutShareWXFriends"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/wx_friends" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/redResultBottomLayoutShareWXFriendsCircle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/wx_friends_circle" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:background="@color/colorDivider" />
+
+            <Button
+                android:id="@+id/redResultBottomLayoutCancel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_button_shape_nomal"
+                android:text="取消"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

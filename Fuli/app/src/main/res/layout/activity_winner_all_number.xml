@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDivider"
+    tools:context="vaporsome.com.vaporsome.vaporsome.winnerallnumber.WinnerAllNumber">
+
+    <RelativeLayout
+        android:id="@+id/winnerAllNumberTopRL"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorTopGuide">
+
+        <LinearLayout
+            android:id="@+id/winnerAllNumberCancel"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/change_user_img_back" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="获得者本次所有购买码"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/winnerAllNumberTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winnerAllNumberTopRL"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:text="幸运得主本次总共参与"
+        android:textColor="@color/colorRecharge" />
+
+    <TextView
+        android:id="@+id/winnerAllNumberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winnerAllNumberTopRL"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/winnerAllNumberTV1"
+        android:gravity="center_horizontal"
+        android:text="11"
+        android:textColor="@color/colorTextRegister" />
+
+    <TextView
+        android:id="@+id/winnerAllNumberTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winnerAllNumberTopRL"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/winnerAllNumberTV"
+        android:text="次"
+        android:textColor="@color/colorRecharge" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/winnerAllNumberTV1"
+        android:layout_marginTop="6dp"
+        android:background="@color/colorGrayLight" />
+
+    <TextView
+        android:id="@+id/winnerAllNumberTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winnerAllNumberTV1"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:text="2016-5-10 14:58:59:179"
+        android:textColor="@color/colorRecharge" />
+
+    <GridView
+        android:id="@+id/winnerAllNumberGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winnerAllNumberTimeTV"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="5"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="14dp" />
+</RelativeLayout>

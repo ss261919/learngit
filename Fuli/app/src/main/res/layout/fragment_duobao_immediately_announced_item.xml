@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_duobao_immediately_announced_itemRL"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:background="@color/colorWhite">
+
+    <FrameLayout
+        android:id="@+id/fragment_duobao_immediately_announced_item_FL"
+        android:layout_width="107dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fragment_duobao_immediately_announced_item_img"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/shouji"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/fragment_duobao_immediately_announced_item_zzjx_img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@mipmap/zhenzaijiexiao" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_duobao_immediately_announced_item_RL"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_toRightOf="@+id/fragment_duobao_immediately_announced_item_FL"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/fragment_duobao_immediately_announced_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="15dp"
+            android:text="苹果(Apple)iphone6s 16G版 4G手机"
+            android:textColor="@color/colorRechargeZF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/fragment_duobao_immediately_announced_item_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_duobao_immediately_announced_item_name"
+            android:layout_marginTop="6dp"
+            android:text="价值：￥"
+            android:textColor="@color/colorRegisterET"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/fragment_duobao_immediately_announced_item_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_duobao_immediately_announced_item_name"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/fragment_duobao_immediately_announced_item_value"
+            android:text="6088.00"
+            android:textColor="@color/colorRegisterET"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="23dp"
+            android:layout_below="@+id/fragment_duobao_immediately_announced_item_money"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/login_button_shape_press"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="6dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/clock" />
+
+                <ImageView
+                    android:id="@+id/fragment_duobao_immediately_announced_item_clock"
+                    android:layout_width="1dp"
+                    android:layout_height="6dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:background="@mipmap/fenzhen" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:gravity="center_vertical"
+                android:text="揭晓倒计时"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fragment_duobao_immediately_announced_item_time_decreaseMinuteTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:gravity="center_vertical"
+                android:text="02:30:45"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_duobao_immediately_announced_item_Ll2"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_toRightOf="@+id/fragment_duobao_immediately_announced_item_FL"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"
+                android:text="获得者:"
+                android:textColor="@color/colorInviteTV"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/fragment_duobao_immediately_announced_item_WinnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:gravity="center"
+                android:text="李四不是王二麻子"
+                android:textColor="@color/colorDuoBaoWinName" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fragment_duobao_immediately_announced_item_time_decreaseSecondTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"
+                android:text="商品价值:"
+                android:textColor="@color/colorInviteTV"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fragment_duobao_immediately_announced_item_Value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:gravity="center"
+                android:text="6088.00"
+                android:textColor="@color/colorRecharge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"
+                android:text="本云参与:"
+                android:textColor="@color/colorInviteTV"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fragment_duobao_immediately_announced_item_ParticipateNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/colorTopGuide" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="人次"
+                android:textColor="@color/colorRecharge" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/fragment_duobao_immediately_announced_item_AnnounceTime"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="揭晓时间:2016-05-27 17:39:16:127"
+            android:textColor="@color/colorRecharge" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

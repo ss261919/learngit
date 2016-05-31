@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/paymentItemImg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dp"
+        android:background="@mipmap/shouji"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/paymentItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/paymentItemImg"
+        android:text="(第125373宝) 苹果(Apple)..."
+        android:textColor="@color/colorRechargeZF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/paymentParticipateNumberTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/paymentMoneyTv"
+        android:text="1人次/" />
+
+    <TextView
+        android:id="@+id/paymentMoneyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:text="￥1.00"
+        android:textColor="@color/colorTopGuide" />
+
+</RelativeLayout>

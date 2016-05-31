@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/shareItemUserImg"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/login_user_icon" />
+
+        <TextView
+            android:id="@+id/shareItemUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/shareItemUserImg" />
+
+        <TextView
+            android:id="@+id/shareItemTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareItemUserId"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/shareItemUserImg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/shareItemUserShareImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/shareItemCreatedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="24dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+
+</LinearLayout>

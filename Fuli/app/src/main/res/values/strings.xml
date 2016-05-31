@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">疯狂红包</string>
+    <string name="province">省份</string>
+    <string name="city">城市</string>
+    <string name="area">区县</string>
+    <string name="title_activity_wxentry">WXEntryActivity</string>
+</resources>

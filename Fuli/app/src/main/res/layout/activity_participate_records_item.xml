@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="vaporsome.com.vaporsome.vaporsome.participaterecords.ParticipateRecords">
+
+    <ImageView
+        android:id="@+id/participateRecordsItemImg"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/red_head_icon"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/participateRecordsItemNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/participateRecordsItemImg"
+        android:text="夺宝让我开上奔驰车了"
+        android:textColor="@color/colorDuoBaoWinName" />
+
+    <TextView
+        android:id="@+id/participateRecordsItemTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/participateRecordsItemNameTV"
+        android:text="参与了" />
+
+    <TextView
+        android:id="@+id/participateRecordsItemParticipateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/participateRecordsItemTV1"
+        android:text="30"
+        android:textColor="@color/colorTopGuide" />
+
+    <TextView
+        android:id="@+id/participateRecordsItemTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/participateRecordsItemParticipateTV"
+        android:text="次" />
+
+    <TextView
+        android:id="@+id/participateRecordsItemParticipateTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/participateRecordsItemImg"
+        android:text="2016-05-09 18:12:326" />
+
+</RelativeLayout>

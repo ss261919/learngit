@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="vaporsome.com.vaporsome.vaporsome.playads.PlayerAdsActivity">
+
+    <LinearLayout
+        android:id="@+id/adsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.48"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0.45">
+
+            <ImageView
+                android:id="@+id/adsLinearLayoutImg1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/little_red_bg"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/adsLinearLayoutImg2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@mipmap/little_red_bg"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/adsLinearLayoutImg3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/little_red_bg"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.01" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0.45">
+
+            <ImageView
+                android:id="@+id/adsLinearLayoutImg4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/little_red_bg"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/adsLinearLayoutImg5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@mipmap/little_red_bg"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/adsLinearLayoutImg6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/little_red_bg"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

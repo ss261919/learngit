@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="vaporsome.com.vaporsome.vaporsome.photoandmesg.PhotoAndMesg">
+
+    <RelativeLayout
+        android:id="@+id/photoAndMesgTopRL"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorTopGuide">
+
+        <LinearLayout
+            android:id="@+id/photoAndMesgCancel"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/change_user_img_back" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="图文详情"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/photoAndMesgImgLoad"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/photoAndMesgTopRL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/load" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/photoAndMesgSRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/photoAndMesgTopRL">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/photoAndMesgRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

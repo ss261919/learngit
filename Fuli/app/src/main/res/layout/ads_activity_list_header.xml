@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adsActivityHeaderLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/adsActivityHeaderCompanyNmaeTV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:background="@color/colorBlack"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.64"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/adsActivityHeaderBGIMG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/adsActivityHeaderLoadLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/adsActivityHeaderLoadImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/load" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="0.27"
+        android:background="@color/colorAdsHeaderBottomBG"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/adsActivityHeaderBuyBT"
+            android:layout_marginTop="12dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <ImageView
+                    android:id="@+id/adsActivityHeaderMoneyIcon1"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@mipmap/rmb" />
+
+                <TextView
+                    android:id="@+id/adsActivityHeaderNewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@+id/adsActivityHeaderMoneyIcon1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorAdsHeaderTV"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="原价"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="21sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/adsActivityHeaderMoneyIcon2"
+                        android:layout_width="18dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/rmb_1" />
+
+                    <TextView
+                        android:id="@+id/adsActivityHeaderOldPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/adsActivityHeaderMoneyIcon2"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAdsHeaderTV2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="折扣"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/adsActivityHeaderDiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textColor="@color/colorAdsHeaderTV2"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="节省"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="21sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/adsActivityHeaderMoneyIcon3"
+                        android:layout_width="18dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/rmb_1" />
+
+                    <TextView
+                        android:id="@+id/adsActivityHeaderSaveTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/adsActivityHeaderMoneyIcon3"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAdsHeaderTV2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:scaleType="matrix"
+            android:src="@mipmap/dotted_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/adsActivityHeaderBuyBT"
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bug_now"
+                android:enabled="true"
+                android:text="立即购买" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

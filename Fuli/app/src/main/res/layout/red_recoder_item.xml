@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/redRecoderItemUserIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/red_head_icon" />
+
+    <TextView
+        android:id="@+id/redRecoderItemUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/redRecoderItemUserIcon"
+        android:textColor="@color/colorRedResultMoney"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/redRecoderItemTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/redRecoderItemUserIcon"
+        android:text="123"
+        android:textColor="@color/colorRedResultCompanyComment"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/redRecoderItemMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:textColor="@color/colorRedResultMoney"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVerificationBG">
+
+    <ImageView
+        android:id="@+id/fragmentDuoBaoSCImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:background="@mipmap/dagouwuche"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/fragmentDuoBaoSCLoadImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/load" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fragmentDuoBaoSCSRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragmentDuoBaoSCRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragmentDuoBaoSCBottomRL"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/fragmentDuoBaoSCBottomTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:text="共"
+            android:textColor="@color/colorRegisterET" />
+
+        <TextView
+            android:id="@+id/fragmentDuoBaoSCBottomCommodityTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/fragmentDuoBaoSCBottomTV"
+            android:gravity="center_horizontal"
+            android:text="1"
+            android:textColor="@color/colorTopGuide" />
+
+        <TextView
+            android:id="@+id/fragmentDuoBaoSCBottomTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/fragmentDuoBaoSCBottomCommodityTV"
+            android:text="件商品，合计"
+            android:textColor="@color/colorRegisterET" />
+
+        <TextView
+            android:id="@+id/fragmentDuoBaoSCBottomTV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/fragmentDuoBaoSCBottomTV2"
+            android:gravity="center_horizontal"
+            android:text="1.00"
+            android:textColor="@color/colorTopGuide" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/fragmentDuoBaoSCBottomTV3"
+            android:text="元"
+            android:textColor="@color/colorRegisterET" />
+
+        <Button
+            android:id="@+id/fragmentDuoBaoSCBottomPostBT"
+            android:layout_width="58dp"
+            android:layout_height="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/login_button_shape_press"
+            android:text="去结算"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

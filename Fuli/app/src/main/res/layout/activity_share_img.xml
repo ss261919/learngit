@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="vaporsome.com.vaporsome.vaporsome.shareimg.ShareImgActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/colorTopGuide">
+
+        <LinearLayout
+            android:id="@+id/shareImageActivityBackLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/change_user_img_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/changeUserInfoPsdBack"
+                android:text="取消"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/shareImageActivityFinishTV"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/shareImageActivityET"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_below="@+id/shareImageActivityBackTV"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/login_button_shape_nomal"
+        android:gravity="start"
+        android:hint="分享心情"
+        android:maxLines="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/shareImageActivityET"
+        android:layout_marginTop="6dp"
+        android:layout_weight="0.65"
+        android:gravity="center_horizontal|top">
+
+        <ImageView
+            android:id="@+id/shareImageActivityImg"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:src="@mipmap/add_image_large" />
+    </LinearLayout>
+
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/shareImageActivityChooseImgBT"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/login_button_shape_nomal"
+                android:gravity="center"
+                android:text="选择图片" />
+        </LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.077"
+        android:background="@color/colorTopGuide">
+
+        <LinearLayout
+            android:id="@+id/redResultCompleteCancle"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="13dp"
+                android:src="@mipmap/change_user_img_back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="红包排名"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/redResultCompleteTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/redResultCompleteSRL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.923">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/redResultCompleteRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"></android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

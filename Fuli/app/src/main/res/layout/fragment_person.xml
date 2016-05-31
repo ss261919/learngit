@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/personFragmentSRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/loginGuideTV"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.083"
+                android:background="@color/colorTopGuide"
+                android:gravity="center"
+                android:text="个人中心"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.02"
+                android:background="@color/colorDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.151"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="73dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/personFragmentUserIcon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/person_center_head_icon" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/personFragmentUserPickName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="2"
+                        android:gravity="bottom"
+                        android:text="qckj"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/personFragmentUserIdLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="帐号："
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/personFragmentUserId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="top"
+                            android:text="余额："
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/personFragmentUserMoneyNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="top"
+                            android:text="0.00元"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.02"
+                android:background="@color/colorDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="0.208"
+                android:background="@color/colorWhite">
+
+                <RelativeLayout
+                    android:id="@+id/personFragmentOutputMoneyLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="57dp"
+                        android:layout_height="53dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/output_money" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/personFragmentMoneyDetailLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="57dp"
+                        android:layout_height="53dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/lin_qian_ming_xi" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/personFragmentRechargeLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="57dp"
+                        android:layout_height="53dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/chongzhi" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/personFragmentSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="57dp"
+                        android:layout_height="53dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/setting" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.02"
+                android:background="@color/colorDivider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.498">
+
+                <ImageView
+                    android:id="@+id/personFragmentAdsImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp" />
+
+                <ImageView
+                    android:id="@+id/personFragmentLoadImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/load"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

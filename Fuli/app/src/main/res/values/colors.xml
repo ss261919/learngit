@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRed">#FFff0000</color>
+    <color name="colorGray">#ccbfbf</color>
+    <color name="colorGrayLight">#d1c4c4</color>
+    <color name="colorWhite">#FFffffff</color>
+    <color name="colorTransparent">#60000000</color>
+    <color name="colorTransparentComplete">#01000000</color>
+    <color name="colorBlack">#ff000000</color>
+    <color name="top_bg_color">#ff000000</color>
+    <color name="primary">#FF03A9F4</color>
+    <color name="primary_dark">#FF0288D1</color>
+    <color name="status_bar_color">@color/primary_dark</color>
+    <color name="colorTopGuide">#D94E42</color>
+    <color name="colorDivider">#ffEFEFF4</color>
+    <color name="colorDividerSmall">#d6d7dc</color>
+    <color name="colorText">#ff323232</color>
+    <color name="colorTextRegister">#D94E42</color>
+    <color name="colorYellow">#FFEAD110</color>
+    <color name="colorYellowLight">#ddb46c</color>
+    <color name="colorVerificationBG">#EFEFF4</color>
+    <color name="colorCashOnDelivery">#54c977</color>
+    <!--mainActivity-->
+    <color name="colorMainBottom">#EFEFF4</color>
+    <!--redResult-->
+    <color name="colorRedResultOutOfMoney">#23b6cc</color>
+    <color name="colorRedResultMoney">#323232</color>
+    <color name="colorRedResultCompanyComment">#909090</color>
+    <!--register-->
+    <color name="colorRegisterET">#909090</color>
+    <!--adsActivity-->
+    <color name="colorPostBT">#9ACA4E</color>
+    <color name="colorOrderAccountTV">#ab0000</color>
+    <color name="colorFastOrderTV">#41b263</color>
+    <color name="colorAdsTooterBG">#FBFBFC</color>
+    <color name="colorAdsHeaderTV">#FDFD00</color>
+    <color name="colorAdsHeaderTV2">#ff8400</color>
+    <color name="colorAdsHeaderBottomBG">#646464</color>
+    <color name="colorAdsHeaderPostBTStart">#EE993C</color>
+    <color name="colorAdsHeaderPostBTEnd">#FE6202</color>
+    <color name="colorAdsHeaderTopGuiderBG">#FCFCFC</color>
+    <color name="colorAdsHeaderTopGuiderTV">#909090</color>
+    <!--invite-->
+    <color name="colorInviteBG">#EFEFF4</color>
+    <color name="colorInviteBTTV">#d94e42</color>
+    <color name="colorInviteStroke">#d6d7dc</color>
+    <color name="colorInviteTV">#323232</color>
+
+    <!--outofMoney-->
+    <color name="colorOutOfMoney">#ffaa3b</color>
+
+    <!--recharge-->
+    <color name="colorRecharge">#909090</color>
+    <color name="colorRechargeZF">#505050</color>
+    <!--duobao_records-->
+    <color name="colorDuoBaoWinName">#ff22AAEF</color>
+    <color name="colorDuoBaoGoingTV">#ffD94E42</color>
+    <!--duobao_detail_treasure_detail_info-->
+    <color name="colorDuoBaoTreasureDivider">#ffD6D7DC</color>
+    <!--computeDetail-->
+    <color name="colorComputeDetailBG">#ffffE7E5</color>
+</resources>

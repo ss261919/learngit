@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="vaporsome.com.vaporsome.vaporsome.commoditydetail.CommodityDetail">
+
+    <RelativeLayout
+        android:id="@+id/commodityDetailTopRL"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorTopGuide">
+
+        <LinearLayout
+            android:id="@+id/commodityDetailCancelLL"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/change_user_img_back" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商品详情"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/commodityDetailNumberLL"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/commodityDetailTopRL"
+        android:background="@drawable/commodity_detail_number_ll_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/commodityDetailNumber1TV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/commodity_datail_press"
+            android:gravity="center"
+            android:text="第790951宝"
+            android:textColor="@color/colorTopGuide"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/commodityDetailNumber2TV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/commodity_detail_normal"
+            android:gravity="center"
+            android:text="第790950宝"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/commodityDetailNumber3TV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/commodity_detail_normal"
+            android:gravity="center"
+            android:text="第790949宝"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!--  <View
+          android:id="@+id/commodityDetailDiver"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_below="@+id/commodityDetailNumberLL"
+          android:background="@color/colorGray" />-->
+
+    <FrameLayout
+        android:id="@+id/commodityDetailFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/commodityDetailNumberLL"></FrameLayout>
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/commodityDetailViewPager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/commodityDetailTopRL">-->
+
+    <!--<android.support.v4.view.PagerTitleStrip-->
+    <!--android:id="@+id/commodityDetailPagerTitleStrip"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="38dp">-->
+
+    <!--</android.support.v4.view.PagerTitleStrip>-->
+    <!--</android.support.v4.view.ViewPager>-->
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_duobao_records_item"
+    android:layout_width="match_parent"
+    android:layout_height="98dp"
+    android:background="@color/colorWhite">
+
+    <FrameLayout
+        android:id="@+id/fragment_duobao_records_item_FL"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dp">
+
+        <ImageView
+            android:id="@+id/fragment_duobao_records_item_Img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/shouji"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/fragment_duobao_records_item_ImgTV"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/fragment_duobao_records_item_tv_bg"
+            android:gravity="center"
+            android:text="已揭晓"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/fragment_duobao_records_item_nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/fragment_duobao_records_item_FL"
+        android:text="(第28439宝) 苹果(Apple)iphone6s"
+        android:textColor="@color/colorRechargeZF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fragment_duobao_records_item_winTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_duobao_records_item_nameTV"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/fragment_duobao_records_item_FL"
+        android:text="获得者："
+        android:textColor="@color/colorRecharge"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fragment_duobao_records_item_win_nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_duobao_records_item_nameTV"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/fragment_duobao_records_item_winTV"
+        android:text="夺宝园我手机梦"
+        android:textColor="@color/colorDuoBaoWinName"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fragment_duobao_records_item_announceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_duobao_records_item_winTV"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/fragment_duobao_records_item_FL"
+        android:text="揭晓时间："
+        android:textColor="@color/colorRecharge"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fragment_duobao_records_item_announce_timeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_duobao_records_item_winTV"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/fragment_duobao_records_item_announceTV"
+        android:text="10分钟前"
+        android:textColor="@color/colorRecharge"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fragment_duobao_records_item_goingTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/fragment_duobao_records_item_FL"
+        android:text="第28441云进行中..."
+        android:textColor="@color/colorDuoBaoGoingTV"
+        android:textSize="12sp" />
+</RelativeLayout>

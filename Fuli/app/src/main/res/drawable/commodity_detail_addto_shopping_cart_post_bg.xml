@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="5dp" />
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/colorGray" />
+    <gradient
+        android:centerColor="@color/colorDuoBaoWinName"
+        android:endColor="@color/colorDuoBaoWinName"
+        android:startColor="@color/colorDuoBaoWinName" />
+</shape>

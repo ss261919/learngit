@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="vaporsome.com.vaporsome.vaporsome.participaterecords.ParticipateRecords">
+
+    <RelativeLayout
+        android:id="@+id/participateRecordsTopRL"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorTopGuide">
+
+        <LinearLayout
+            android:id="@+id/participateRecordsCancel"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/change_user_img_back" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="参与记录"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/participateRecordsImgLoad"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/participateRecordsTopRL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/load" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/participateRecordsSRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/participateRecordsTopRL">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/participateRecordsRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"></android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

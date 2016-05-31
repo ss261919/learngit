@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/redAdsItemRL"
+        android:layout_width="250dp"
+        android:layout_height="334dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/red_bg">
+
+        <TextView
+            android:id="@+id/redAdsItemTvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/colorYellowLight"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/redAdsItemCompanyImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/redAdsItemTvMoney"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/redAdsItemTvCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redAdsItemCompanyImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/colorYellowLight" />
+
+
+        <TextView
+            android:id="@+id/redAdsItemTvCompanyWish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redAdsItemTvCompanyName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="@color/colorYellowLight"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/redAdsItemOpenRed"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_below="@+id/redAdsItemTvCompanyWish"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:background="@mipmap/open_red" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

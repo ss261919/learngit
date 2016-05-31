@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="vaporsome.com.vaporsome.vaporsome.duobaodetail.DuoBaoDetail">
+
+    <RelativeLayout
+        android:id="@+id/duobao_detail_top_guider_RL"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorTopGuide">
+
+        <LinearLayout
+            android:id="@+id/duobao_detail_top_guider_RL_Cancel"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/change_user_img_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="夺宝详情"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/duobao_detail_treasure_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/duobao_detail_top_guider_RL">
+
+        <FrameLayout
+            android:id="@+id/duobao_detail_FL"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/duobao_detail_FL_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/shouji" />
+
+            <TextView
+                android:id="@+id/duobao_detail_FL_imgTV"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/fragment_duobao_records_item_tv_bg"
+                android:gravity="center"
+                android:text="已揭晓"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/duobao_detail_nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/duobao_detail_FL"
+            android:text="(第28439宝) 苹果(Apple)iphone6s"
+            android:textColor="@color/colorRechargeZF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/duobao_detail_participate_timesTV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duobao_detail_nameTV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/duobao_detail_FL"
+            android:text="已参与"
+            android:textColor="@color/colorRechargeZF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/duobao_detail_participate_timesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duobao_detail_nameTV"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/duobao_detail_participate_timesTV1"
+            android:text="5"
+            android:textColor="@color/colorTopGuide"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duobao_detail_nameTV"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/duobao_detail_participate_timesTV"
+            android:text="人次"
+            android:textColor="@color/colorRechargeZF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/duobao_detail_winTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duobao_detail_participate_timesTV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/duobao_detail_FL"
+            android:text="获得者："
+            android:textColor="@color/colorRechargeZF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/duobao_detail_win_nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duobao_detail_participate_timesTV"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/duobao_detail_winTV"
+            android:text="夺宝园我手机梦"
+            android:textColor="@color/colorDuoBaoWinName"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/duobao_detail_announceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duobao_detail_winTV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/duobao_detail_FL"
+            android:text="揭晓时间："
+            android:textColor="@color/colorRechargeZF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/duobao_detail_announce_timeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duobao_detail_winTV"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/duobao_detail_announceTV"
+            android:text="2016-0510-15:02:48"
+            android:textColor="@color/colorRechargeZF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/duobao_detail_goingTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duobao_detail_announceTV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/duobao_detail_FL"
+            android:text="第28441云正在进行中..."
+            android:textColor="@color/colorDuoBaoGoingTV"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/duobao_detail_participate_timesLL"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/duobao_detail_treasure_detail_info"
+        android:background="@drawable/duobao_detail_ll_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="你总共参与"
+            android:textColor="@color/colorRegisterET"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/duobao_detail_participate_timesLL_participate_timesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="5"
+            android:textColor="@color/colorTopGuide" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="人次" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/duobao_detail_participate_timeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/duobao_detail_participate_timesLL"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="14dp"
+        android:text="2016-05-10 14:58:59:176" />
+
+    <TextView
+        android:id="@+id/duobao_detail_bottom_participate_timesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/duobao_detail_participate_timesLL"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/duobao_detail_participate_timeTV"
+        android:text="5人次" />
+
+    <GridView
+        android:id="@+id/duobao_detail_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/duobao_detail_participate_timeTV"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="5"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/duobao_detail_gridView"
+        android:background="@color/colorDivider"></LinearLayout>
+</RelativeLayout>

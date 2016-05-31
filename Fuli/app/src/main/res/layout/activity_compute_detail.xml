@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/computeDetailSRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDivider"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="vaporsome.com.vaporsome.vaporsome.computedetail.ComputeDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/computeDetailTopRl"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorTopGuide">
+
+            <LinearLayout
+                android:id="@+id/computeDetailCancel"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/change_user_img_back" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="计算详情"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <vaporsome.com.vaporsome.common.custom.MyScrollView
+            android:id="@+id/paymentScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/computeDetailTopRl"
+            android:layout_marginBottom="53dp"
+            android:focusableInTouchMode="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorComputeDetailBG">
+
+                    <LinearLayout
+                        android:id="@+id/computeDetailWinNumberLL"
+                        android:layout_width="202dp"
+                        android:layout_height="39dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/compute_detail_ll_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/computeDetailWinNumberTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10003672"
+                            android:textColor="@color/colorDuoBaoGoingTV"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="最终计算结果"
+                            android:textColor="@color/colorRecharge"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/computeDetailWinNumberEqualTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/computeDetailWinNumberLL"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:text="||"
+                        android:textColor="@color/colorTopGuide" />
+
+                    <RelativeLayout
+                        android:id="@+id/computeDetailComputeRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/computeDetailWinNumberEqualTV"
+                        android:layout_marginTop="3dp">
+
+                        <LinearLayout
+                            android:id="@+id/computeDetailCommodityLL"
+                            android:layout_width="70dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/compute_detail_ll_bg_white"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/computeDetailCommodityTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5188"
+                                android:textColor="@color/colorDuoBaoGoingTV"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="商品总需人次"
+                                android:textColor="@color/colorRecharge"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/computeDetailRemainder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toLeftOf="@+id/computeDetailCommodityLL"
+                            android:text="%"
+                            android:textColor="@color/colorTopGuide" />
+
+                        <LinearLayout
+                            android:id="@+id/computeDetailTimeAddingValuesLL"
+                            android:layout_width="85dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toLeftOf="@+id/computeDetailRemainder"
+                            android:background="@drawable/compute_detail_ll_bg_white"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/computeDetailTimeAddingValuesTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16382296535"
+                                android:textColor="@color/colorDuoBaoGoingTV"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="时间取值之和"
+                                android:textColor="@color/colorRecharge"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toLeftOf="@+id/computeDetailTimeAddingValuesLL"
+                            android:text="（"
+                            android:textColor="@color/colorTopGuide" />
+
+                        <TextView
+                            android:id="@+id/computeDetailRightParenthesisTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/computeDetailCommodityLL"
+                            android:text=" ）+ "
+                            android:textColor="@color/colorTopGuide" />
+
+                        <LinearLayout
+                            android:id="@+id/computeDetailFixedNumberLL"
+                            android:layout_width="63dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/computeDetailRightParenthesisTV"
+                            android:background="@drawable/compute_detail_ll_bg_white"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/computeDetailFixedNumberTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10000001"
+                                android:textColor="@color/colorDuoBaoGoingTV"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="固定数值"
+                                android:textColor="@color/colorRecharge"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/computeDetailTheLastBoughtTimeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/computeDetailComputeRL"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="8dp"
+                        android:text="截至该商品最后购买时间【2016-05-07 18:20:16:526】"
+                        android:textColor="@color/colorTopGuide"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/computeDetailTheLastBoughtTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/computeDetailTheLastBoughtTimeTV"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="3dp"
+                        android:text="网站所有商品的最后100条购买时间取值之和"
+                        android:textColor="@color/colorTopGuide"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:id="@+id/computeDetailComputeWayLL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/computeDetailTheLastBoughtTimeTV"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/computeDetailTheLastBoughtTime"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="如何计算?"
+                            android:textColor="@color/colorTopGuide"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorTopGuide" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorDivider"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="夺宝时间"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="转换数据"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="会员"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/computeDetailRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/computeDetailLookMoreLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="@color/colorComputeDetailBG"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/computeDetailLookMoreTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看所有"
+                        android:textColor="@color/colorTopGuide" />
+
+                    <ImageView
+                        android:id="@+id/computeDetailLookMoreLLImg"
+                        android:layout_width="18dp"
+                        android:layout_height="8dp"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/xiajiantou" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </vaporsome.com.vaporsome.common.custom.MyScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="228dp"
+                android:layout_height="36dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/login_button_shape_press"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/computeDetailBottomRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="第90751宝正在进行中"
+                    android:textColor="@color/colorWhite" />
+
+                <ImageView
+                    android:id="@+id/computeDetailImgGoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/compute_anim_list" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commodityDetailWaitSRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <vaporsome.com.vaporsome.common.custom.MyScrollView
+            android:id="@+id/commodityDetailWaitScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="53dp"
+            android:scrollbars="none">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/commodityDetailWaitTimeRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="129dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/kuang">
+
+                    <TextView
+                        android:id="@+id/commodityDetailWaitTimeRLTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="已满员，揭晓结果即将公布"
+                        android:textColor="@color/colorTopGuide"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/commodityDetailWaitTimeSecond"
+                        android:layout_width="79dp"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/commodityDetailWaitTimeRLTV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/login_button_shape_press"
+                        android:gravity="center"
+                        android:text="16"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="31dp" />
+
+                    <ImageView
+                        android:id="@+id/commodityDetailWaitTimeSecondDividerPoint"
+                        android:layout_width="20dp"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/commodityDetailWaitTimeRLTV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/commodityDetailWaitTimeSecond"
+                        android:background="@mipmap/shuangyuandian" />
+
+                    <ImageView
+                        android:id="@+id/commodityDetailWaitTimeMinutePoint"
+                        android:layout_width="20dp"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/commodityDetailWaitTimeRLTV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_toLeftOf="@+id/commodityDetailWaitTimeSecond"
+                        android:background="@mipmap/shuangyuandian" />
+
+                    <TextView
+                        android:id="@+id/commodityDetailWaitTimeMinute"
+                        android:layout_width="79dp"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/commodityDetailWaitTimeRLTV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_toLeftOf="@+id/commodityDetailWaitTimeMinutePoint"
+                        android:background="@drawable/login_button_shape_press"
+                        android:gravity="center"
+                        android:text="02"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="31dp" />
+
+                    <TextView
+                        android:id="@+id/commodityDetailWaitTimeHair"
+                        android:layout_width="79dp"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/commodityDetailWaitTimeRLTV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/commodityDetailWaitTimeSecondDividerPoint"
+                        android:background="@drawable/login_button_shape_press"
+                        android:gravity="center"
+                        android:text="39"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="31dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/commodityDetailWaitTimeRL2"
+                    android:layout_width="match_parent"
+                    android:layout_height="129dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/kuang"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/commodityDetailWaitTimeRLTV2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="正在计算结果"
+                        android:textColor="@color/colorTopGuide"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/commodityDetailWaitTimeLoadImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/commodityDetailWaitTimeRLTV2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/load" />
+
+                </RelativeLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/commodityDetailWaitViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="247dp"
+                    android:layout_below="@+id/commodityDetailWaitTimeRL"
+                    android:layout_marginTop="20dp"></android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/commodityDetailWaitGuidePointLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="380dp"
+                    android:background="@color/colorTransparentComplete"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/commodityDetailWaitNameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/commodityDetailWaitViewPager"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:text="(第90751宝）苹果（Apple）iphone 6s 16G版 4G手机"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/commodityDetailWaitDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/commodityDetailWaitNameTV"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="有些礼物，能瞬间抓住人心，唯一的不同，是处处不同！（颜色随机发）"
+                    android:textColor="@color/colorTopGuide"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/commodityDetailWaitMoneyLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/commodityDetailWaitDescription"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="13dp">
+
+                    <TextView
+                        android:id="@+id/commodityDetailWaitMoney"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="价值：￥5188元"
+                        android:textColor="@color/colorRecharge"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/commodityDetailLimitTimesTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/commodityDetailWaitDescription"
+                        android:layout_toRightOf="@+id/commodityDetailWaitMoney"
+                        android:layout_weight="1"
+                        android:text="限购5人次"
+                        android:textColor="@color/colorTopGuide"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/commodityDetailWaitPercentage"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="280dp"
+                    android:layout_height="7dp"
+                    android:layout_below="@+id/commodityDetailWaitMoneyLL"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/commodityDetailWaitPercentage"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/colorGray" />
+
+
+                <RelativeLayout
+                    android:id="@+id/commodityDetailWaitParticipateRecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_below="@+id/commodityDetailWaitPercentage"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="18sp"
+                    android:layout_marginTop="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="参与记录"
+                        android:textColor="@color/colorRechargeZF"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/commodityDetailWaitParticipateRecordsInsideImg"
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@mipmap/add_user_img_inside" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/commodityDetailWaitParticipateRecords"
+                    android:background="@color/colorGrayLight" />
+
+                <RelativeLayout
+                    android:id="@+id/commodityDetailWaitPhotoAndMesgDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_below="@+id/commodityDetailWaitParticipateRecords"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="18sp">
+
+                    <TextView
+                        android:id="@+id/commodityDetailWaitPhotoAndMesgDetailTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="图文详情"
+                        android:textColor="@color/colorRechargeZF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/commodityDetailWaitPhotoAndMesgDetailTV"
+                        android:text="(建议WIFI下使用)"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/commodityDetailWaitPhotoAndMesgDetailImgInside"
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@mipmap/add_user_img_inside" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/commodityDetailWaitPhotoAndMesgDetail"
+                    android:background="@color/colorGrayLight" />
+
+            </RelativeLayout>
+        </vaporsome.com.vaporsome.common.custom.MyScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="261dp"
+                android:layout_height="29dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/login_button_shape_press"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/computeDetailWaitBottomRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="第90751宝正在进行中"
+                    android:textColor="@color/colorWhite" />
+
+                <ImageView
+                    android:id="@+id/computeDetailWaitImgGoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/compute_anim_list" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

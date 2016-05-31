@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adsActivitySRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.077"
+            android:background="@color/colorAdsHeaderTopGuiderBG">
+
+            <LinearLayout
+                android:id="@+id/adsActivityBack"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@mipmap/ads_activity_back" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/adsActivityGoToTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="商品详情"
+                android:textColor="@color/colorAdsHeaderTopGuiderTV"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <vaporsome.com.vaporsome.common.custom.MyScrollView
+            android:id="@+id/adsActivityScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.823"
+            android:focusableInTouchMode="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/adsActivityScrollViewLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/adsActivityHeader"
+                    layout="@layout/ads_activity_list_header" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/adsActivityRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+                <include
+                    android:id="@+id/adsActivityFooter"
+                    layout="@layout/ads_activity_listitem_footer" />
+            </LinearLayout>
+
+
+        </vaporsome.com.vaporsome.common.custom.MyScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/colorTopGuide">
+
+            <LinearLayout
+                android:id="@+id/adsActivityOnLineOrder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/online_order"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/adsActivityPhoneInformation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/phone_advisory"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/adsActivitySmsInformation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/sms_advisory"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

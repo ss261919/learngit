@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/fragment_duobao_the_new_item_xiangou"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@mipmap/xiangou" />
+
+    <ImageView
+        android:id="@+id/fragment_duobao_the_new_item_img"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@mipmap/shouji"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/fragment_duobao_the_new_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_duobao_the_new_item_img"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="6dp"
+        android:text="(第1090宝)苹果iphone6s"
+        android:textColor="@color/colorRechargeZF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fragment_duobao_the_new_item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_duobao_the_new_item_name"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="6dp"
+        android:text="价值：￥"
+        android:textColor="@color/colorRechargeZF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fragment_duobao_the_new_item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_duobao_the_new_item_name"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/fragment_duobao_the_new_item_value"
+        android:text="6088.00"
+        android:textColor="@color/colorRechargeZF"
+        android:textSize="12sp" />
+
+    <ProgressBar
+        android:id="@+id/fragment_duobao_the_new_item_percentage"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="154dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/fragment_duobao_the_new_item_value"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <ImageView
+        android:id="@+id/fragment_duobao_the_new_item_shopping_cart"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fragment_duobao_the_new_item_percentage"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="6dp"
+        android:background="@mipmap/the_new_gouwuche" />
+
+    <Button
+        android:id="@+id/fragment_duobao_the_new_item_duobaoBT"
+        android:layout_width="97dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/fragment_duobao_the_new_item_percentage"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/fragment_duobao_the_new_item_shopping_cart"
+        android:background="@drawable/fragment_the_new_bt"
+        android:gravity="center"
+        android:text="立即一元夺宝"
+        android:textColor="@color/colorTopGuide"
+        android:textSize="12sp" />
+
+</RelativeLayout>

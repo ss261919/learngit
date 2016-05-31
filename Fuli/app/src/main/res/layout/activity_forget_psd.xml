@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorTopGuide"
+        android:gravity="center"
+        android:text="忘记密码"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_weight="0.3"
+        android:background="@mipmap/register_input_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="手机号:"
+                android:textColor="@color/colorTextRegister"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/forgetPsdUserNameET"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:background="@drawable/login_user_name_et"
+                android:focusable="true"
+                android:hint="请输入手机号"
+                android:maxLines="1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/forgetPsdVerificationNumberTT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="发送验证码"
+                android:textColor="@color/colorTextRegister"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="4dp"
+                android:gravity="center_vertical"
+                android:text="密码:"
+                android:textColor="@color/colorTextRegister"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/forgetPsdUserPasswordET"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/login_user_name_et"
+                android:hint="请输入密码"
+                android:maxLines="1"
+                android:password="true"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/registerVerificationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/registerUserNameET"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="确认密码:"
+                android:textColor="@color/colorTextRegister"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/forgetPsdUserPasswordConfirmET"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/login_user_name_et"
+                android:hint="确认密码"
+                android:maxLines="1"
+                android:password="true"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <!--
+                <ImageView
+                    android:id="@+id/registerPasswordClean"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="181dp"
+                    android:src="@drawable/close_red"
+                    android:visibility="gone" />
+        -->
+
+        <!--        <ImageView
+                    android:id="@+id/registerPasswordConfirmClean"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="241dp"
+                    android:src="@drawable/close_red"
+                    android:visibility="gone" />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_weight="0.1"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/forgetPsdVerificationNumberET"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/login_button_shape_nomal"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码"
+            android:maxLines="1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/forgetPasswordPostBT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="0.075"
+        android:background="@drawable/login_button_shape_press"
+        android:text="确认"
+        android:textColor="@color/colorGray"
+        android:textSize="18sp" />
+</LinearLayout>

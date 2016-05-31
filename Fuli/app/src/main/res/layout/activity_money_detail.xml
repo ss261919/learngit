@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".vaporsome.moneydetail.MoneyDetail">
+
+    <RelativeLayout
+        android:id="@+id/moneyDetailTopGuide"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorTopGuide">
+
+        <LinearLayout
+            android:id="@+id/moneyDetailLinearLayoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/change_user_img_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/changeUserInfoPsdBack"
+                android:text="返回"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="零钱明细"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/moneyDetailSRF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/moneyDetailTopGuide">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/moneyDetailRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/moneyDetailTopGuide" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <include
+        android:id="@+id/moneyDetailLoadRL"
+        layout="@layout/load_ll" />
+</RelativeLayout>

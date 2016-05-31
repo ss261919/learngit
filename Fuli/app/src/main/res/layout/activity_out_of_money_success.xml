@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorInviteBG"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="vaporsome.com.vaporsome.vaporsome.outofmoney.OutOfMoneySuccessActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorTopGuide">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提现详情"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.28"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:background="@mipmap/clock_icon" />
+
+        <TextView
+            android:id="@+id/outOfMoneySuccessMesgTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/colorInviteTV"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:text="储蓄卡"
+                android:textColor="@color/colorAdsHeaderTopGuiderTV"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/outOfMoneySuccessBankId"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorInviteTV"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/outOfMoneySuccessBankIdLast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/outOfMoneySuccessBankId"
+                android:text="尾号"
+                android:textColor="@color/colorInviteTV"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/outOfMoneySuccessBankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/outOfMoneySuccessBankIdLast"
+                android:textColor="@color/colorInviteTV"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:text="提现金额"
+                android:textColor="@color/colorAdsHeaderTopGuiderTV"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/outOfMoneySuccessMoneyNumber"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorInviteTV"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/outOfMoneySuccessMoneyNumber"
+                android:text="￥"
+                android:textColor="@color/colorInviteTV"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/outOfMoneySuccessCompleteBT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="0.075"
+        android:background="@drawable/login_button_shape_press"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/colorGray"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="vaporsome.com.vaporsome.vaporsome.setting.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorTopGuide">
+
+            <LinearLayout
+                android:id="@+id/settingCancel"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/change_user_img_back" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="设置"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settingChangeUserInfoPsdInside"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13sp"
+            android:layout_weight="0.095">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="修改资料"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:src="@mipmap/add_user_img_inside" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDividerSmall" />
+
+        <RelativeLayout
+            android:id="@+id/settingAboutCrazyRed"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13sp"
+            android:layout_weight="0.095">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="关于疯狂红包"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:src="@mipmap/add_user_img_inside" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:background="@color/colorDivider" />
+
+        <RelativeLayout
+            android:id="@+id/settingInviteFriends"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13sp"
+            android:layout_weight="0.095">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="邀请好友使用疯狂红包"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:src="@mipmap/add_user_img_inside" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDivider" />
+
+        <RelativeLayout
+            android:id="@+id/settingQuit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13sp"
+            android:layout_weight="0.095">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="退出"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:src="@mipmap/add_user_img_inside" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDividerSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settingBGLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+
+</FrameLayout>

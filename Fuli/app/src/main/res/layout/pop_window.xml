@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="307dp"
+        android:layout_height="409dp"
+        android:background="@mipmap/red_bg">
+
+        <LinearLayout
+            android:id="@+id/initPopWindowCancleLL"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="22dp"
+                android:background="@mipmap/close"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/initPopWindowCompanyIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/initPopWindowComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/initPopWindowCompanyIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/colorYellowLight"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/initPopWindowTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/initPopWindowComment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:textColor="@color/colorYellowLight"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/initPopWindowLookRedRanking"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="61dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="查看红包排名"
+                android:textColor="@color/colorYellowLight"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginLeft="8dp"
+                android:background="@mipmap/look_other_inside" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

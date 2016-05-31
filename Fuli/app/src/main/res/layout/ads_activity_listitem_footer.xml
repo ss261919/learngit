@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorFastOrderTV"
+        android:gravity="center"
+        android:text="在线快速订购"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:id="@+id/adsActivityColorLL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="0.75">
+
+        <ImageView
+            android:id="@+id/adsActivityListViewFooterColorStarPoint"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/point" />
+
+        <TextView
+            android:id="@+id/adsActivityListViewFooterColorTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterColorStarPoint"
+            android:gravity="center"
+            android:text="颜色" />
+
+        <Spinner
+            android:id="@+id/adsActivityListViewFooterColorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterColorTV"></Spinner>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <RelativeLayout
+        android:id="@+id/adsActivitySizeLL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="0.75">
+
+        <ImageView
+            android:id="@+id/adsActivityListViewFooterSizeStarPoint"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/point" />
+
+        <TextView
+            android:id="@+id/adsActivityListViewFooterSizeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterSizeStarPoint"
+            android:gravity="center"
+            android:text="尺寸" />
+
+        <Spinner
+            android:id="@+id/adsActivityListViewFooterSizeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterSizeTV"></Spinner>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="0.75">
+
+        <ImageView
+            android:id="@+id/adsActivityListViewFooterCountStarPoint1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/point" />
+
+        <TextView
+            android:id="@+id/adsActivityListViewFooterCountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterCountStarPoint1"
+            android:gravity="center"
+            android:text="数量" />
+
+        <Button
+            android:id="@+id/decreaseCountBT"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterCountTV"
+            android:background="@mipmap/decrease" />
+
+        <EditText
+            android:id="@+id/adsActivityListViewFooterCountET"
+            android:layout_width="34dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/decreaseCountBT"
+            android:background="@drawable/login_button_shape_nomal"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/increaseCountBT"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterCountET"
+            android:background="@mipmap/increase" />
+
+        <ImageView
+            android:id="@+id/adsActivityListViewFooterCountStarPoint2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/increaseCountBT"
+            android:background="@mipmap/point" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterCountStarPoint2"
+            android:text="订购数量(点击增减或填写)"
+            android:textColor="@color/colorOrderAccountTV" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="0.65">
+
+        <ImageView
+            android:id="@+id/adsActivityListViewFooterNameStarPoint"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/point" />
+
+        <TextView
+            android:id="@+id/adsActivityListViewFooterNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterNameStarPoint"
+            android:gravity="center"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/adsActivityListViewFooterNameET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterNameTV"
+            android:background="@drawable/login_button_shape_nomal"
+            android:textColor="@color/colorText" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="0.65">
+
+        <ImageView
+            android:id="@+id/adsActivityListViewFooterPhoneStarPoint"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/point" />
+
+        <TextView
+            android:id="@+id/adsActivityListViewFooterPhoneTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterPhoneStarPoint"
+            android:gravity="center"
+            android:text="手机" />
+
+        <EditText
+            android:id="@+id/adsActivityListViewFooterPhoneET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterPhoneTV"
+            android:background="@drawable/login_button_shape_nomal"
+            android:textColor="@color/colorText" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="0.75">
+
+        <ImageView
+            android:id="@+id/adsActivityListViewFooterSizeLocationPoint"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/point" />
+
+        <TextView
+            android:id="@+id/adsActivityListViewFooterLocationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterSizeLocationPoint"
+            android:gravity="center"
+            android:text="地区" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterLocationTV">
+
+            <Spinner
+                android:id="@+id/adsActivityListViewFooterLocationProvinceSpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/adsActivityListViewFooterLocationCitySpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/adsActivityListViewFooterLocationAreaSpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="0.65">
+
+        <ImageView
+            android:id="@+id/adsActivityListViewFooterLocationDetailStarPoint"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/point" />
+
+        <TextView
+            android:id="@+id/adsActivityListViewFooterLocationDetailTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterLocationDetailStarPoint"
+            android:gravity="center"
+            android:text="地址" />
+
+        <EditText
+            android:id="@+id/adsActivityListViewFooterLocationDetailET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterLocationDetailTV"
+            android:background="@drawable/login_button_shape_nomal"
+            android:textColor="@color/colorText" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="0.65">
+
+        <ImageView
+            android:id="@+id/adsActivityListViewFooterMoneyAccountStarPoint"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/point" />
+
+        <TextView
+            android:id="@+id/adsActivityListViewFooterMoneyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterMoneyAccountStarPoint"
+            android:gravity="center"
+            android:text="总价" />
+
+        <TextView
+            android:id="@+id/adsActivityListViewFooterMoneyAccountTV"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterMoneyAccount"
+            android:background="@drawable/login_button_shape_nomal"
+            android:gravity="center"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterMoneyAccountTV"
+            android:gravity="center"
+            android:text="元" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="1.5">
+
+        <ImageView
+            android:id="@+id/adsActivityListViewFooterPayStarPoint"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/point" />
+
+        <TextView
+            android:id="@+id/adsActivityListViewFooterPayTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterPayStarPoint"
+            android:gravity="center"
+            android:text="付款" />
+
+        <ImageView
+            android:id="@+id/adsActivityListViewFooterPayImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterPayTV"
+            android:background="@mipmap/cash_on_delivery" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adsActivityListViewFooterPayImg"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterPayTV"
+            android:text="支持全国货到付款，免邮费!收到货有任何疑问请拨打我们免费电话"
+            android:textColor="@color/colorCashOnDelivery"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/adsActivityListViewFooterMessageTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:text="留言" />
+
+        <EditText
+            android:id="@+id/adsActivityListViewFooterMessageET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="24dp"
+            android:layout_toRightOf="@+id/adsActivityListViewFooterMessageTV"
+            android:background="@drawable/login_button_shape_nomal"
+            android:gravity="top"
+            android:hint="如备用联系电话"
+            android:textColor="@color/colorText"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+    <Button
+        android:id="@+id/adsActivityListViewFooterPostBT"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/login_button_shape_order_post"
+        android:text="提交订单"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+
+</LinearLayout>

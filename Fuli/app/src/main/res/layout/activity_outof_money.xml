@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/out_of_moneySRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/personPopWindowOutofMoney"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorTopGuide">
+
+                <LinearLayout
+                    android:id="@+id/personPopWindowCancle"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/change_user_img_back" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="申请提现"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.025" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorDivider">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="center_vertical"
+                    android:text="提现银行卡信息确认"
+                    android:textColor="@color/colorTopGuide"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.025" />
+
+            <EditText
+                android:id="@+id/personPopWindowUserName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="0.075"
+                android:background="@drawable/login_button_shape_nomal"
+                android:hint="请输入持卡人姓名"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorAdsHeaderTopGuiderTV"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.025" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="0.075"
+                android:background="@drawable/login_button_shape_nomal">
+
+                <Spinner
+                    android:id="@+id/personPopWindowOutputMoneyBankSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_button_shape_nomal"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.025" />
+
+            <EditText
+                android:id="@+id/personPopWindowCardId"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/personPopWindowOutputMoneyBankET"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="0.075"
+                android:background="@drawable/login_button_shape_nomal"
+                android:hint="银行卡号"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorAdsHeaderTopGuiderTV"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.025" />
+
+            <EditText
+                android:id="@+id/personPopWindowMoneyNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/personPopWindowCardId"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="0.075"
+                android:background="@drawable/login_button_shape_nomal"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorAdsHeaderTopGuiderTV"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/personPopWindowUserNotice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_above="@+id/personPopWindowPostBT"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:text="请认真核对银行卡各项信息，一旦确认不可更改。"
+                android:textColor="@color/colorOutOfMoney" />
+
+            <Button
+                android:id="@+id/personPopWindowOutputMoneyPostBT"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="0.075"
+                android:background="@drawable/login_button_shape_press"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/colorGray"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/outOfMoneyLoadRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorTopGuide">
+
+                <LinearLayout
+                    android:id="@+id/personPopWindowCancle2"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/change_user_img_back" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="申请提现"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/outOfMoneyLoadImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/load" />
+
+            <TextView
+                android:id="@+id/outOfMoneyLoadTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="64dp"
+                android:text="数据下载失败，试试下拉刷新！"
+                android:textColor="@color/colorAdsHeaderTopGuiderTV"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
