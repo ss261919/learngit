@@ -6,3 +6,6 @@ Git dev btanch test.
 Git dev btanch test2.
 Creating a new branch is quick and simple.
 Test merge --no-ff.
+Test merge --no-ff.
+Bash
+Creating a new brach is quick AND simple;
