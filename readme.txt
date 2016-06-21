@@ -9,4 +9,5 @@ Test merge --no-ff.
 Creating a new branch is quick and simple.
 git add .
 Git -- no-ff git merge.
+Git feature.
 
